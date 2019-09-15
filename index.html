@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Эвакуатор73</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/tow-truck.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="main-bg">
+            <div class="main-overlay">
+                <div class="wraper">
+                    <div class="header">
+                        <div class="header-container">
+                            <div class="logo">
+                                <img src="img/logo.png" alt="эвакуатор73">
+                            </div>
+
+                            <div class="menu" id="menu">
+                                <div class="top-nav">
+                                    <a href="#" onclick="slowScroll('#')">Главная</a>
+                                    <a href="#about" onclick="slowScroll('#about')">О нас</a>
+                                    <a href="#tarrifs" onclick="slowScroll('#tarrifs')">Тарифы</a>
+                                </div>
+                            </div>
+
+                            <div class="call-number">
+                                <a href="tel:89372378880">
+                                    <img src="img/call-answer.png" alt="telephone">
+                                    +7 (937) 273-88-80
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /.header -->
+                    </div>
+                    <div class="main-content">
+                        <div class="main-text">
+                            <h1>Эвакуатор73</h1>
+                            <p>эвакуация автомобилей до 2 тонн в Ульяновске
+                                <br>
+                                Заволжский район
+                            </p>
+                        </div>
+                        <div class="main-btn">
+                            <a href="tel:89372378880"><button>Заказать</button></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- /.container -->
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="content-about">
+                    <h1>
+                        <span> О нас
+                            <div class="content-line-about"></div>
+                        </span>
+                    </h1>
+
+                    <div class="col-md-10 col-md-offset-1">
+                        <p>Заказать автоэвакуатор в Ульяновске Вы можете в компании «эвакуатор73» наши эвакуаторы
+                            дежурят
+                            круглосуточно, без выходных и праздников.
+                            Звоните нам в любое время для заказа эвакуатора и пользуйтесь нашими услугами, телефон
+                            эвакуатора:
+                            <strong><a href="tel:89372378880">+7 (937) 273-88-80</a>.</strong> <br>
+                            Предоставляем услуги эвакуатора по перевозки автомобилей, грузовиков и спецтехники до 2
+                            тонн.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarrifs">
+        <div class="container">
+            <div class="row">
+                <div class="content-tarrifs">
+
+                    <h1>
+                        <span>
+                            Тарифы
+                            <div class="content-line-traffics">
+                            </div>
+                        </span></h1>
+
+
+                    <div class="col-md-8 col-md-offset-2">
+                        <p>Все услуги, дополнительные сборы, сложность погрузки, выгрузка автомобиля или ожидание
+                            включены в единый тариф. <br> Загородный тариф : <strong>25 ₽ / 1 км</strong>. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cards">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                    <img src="img/image 3.png" alt="картинка">
+                    <p class="text-card">Эвакуатор
+                        <br>
+                        по Заволжскому району</p>
+                    <p class="text-price">1500₽</p>
+                </div>
+                <div class="col-md-4 ">
+                    <img src="img/image 3.png" alt="картинка">
+                    <p class="text-card">Эвакуатор <br>
+                        по Ленинскому району</p>
+                    <p class="text-price">2000₽</p>
+                </div>
+                <div class="col-md-4 ">
+                    <img src="img/image 3.png" alt="картинка">
+                    <p class="text-card">Эвакуатор <br>
+                        по Засвияжскому району</p>
+                    <p class="text-price">2500₽</p>
+                </div>
+            </div>
+        </div>
+
+        <p id="text">*Подробную информацию о тарифах можно уточнить по телефону: <a href="tel:89372378880">+7 (937) 237-88-80</a></p>
+    </section>
+
+    <footer>
+        <div class="footer-text">
+            <p>© 2019 Evacuator73 Ulyanovsk</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#menu").on("click", "a", function (event) {
+                event.preventDefault();
+                var id = $(this).attr('href'),
+                    top = $(id).offset().top;
+                $('body,html').animate({ scrollTop: top }, 1000);
+            });
+        });
+    </script>
+</body>
+
+</html>

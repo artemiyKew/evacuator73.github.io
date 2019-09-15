@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+p,
+h1,
+h2 {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-bg {
+    background: url(../img/main-bg.png) center center no-repeat/cover;
+    width: 100%;
+    color: #fff;
+}
+
+.main-overlay {
+    background: rgba(23, 23, 27, 0.5);
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    background: rgba(28, 28, 27, 0.33);
+    display: flex;
+}
+
+.header-container {
+    max-width: 1318px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo {
+    z-index: 5000;
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.menu {
+    z-index: 5000;
+    padding-top: 45px;
+    padding-bottom: 36px;
+    white-space: nowrap;
+}
+
+.top-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 48px;
+    text-align: center;
+}
+
+.top-nav a:hover {
+    color: rgb(187, 190, 190);
+}
+
+.call-number {
+    z-index: 5000;
+    padding-top: 43px;
+    white-space: nowrap;
+}
+
+.call-number a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.main-content {
+    text-align: center;
+    padding-top: 280px;
+}
+
+.main-text p {
+    padding-top: 34px;
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.main-text h1 {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    text-transform: uppercase
+}
+
+.main-btn {
+    text-align: center;
+    padding-top: 62px;
+}
+
+.main-btn button {
+    background: #FFCB45;
+    border-radius: 91px;
+    border: #FFCB45;
+    width: 304px;
+    height: 70px;
+    cursor: pointer;
+    color: #3C3C3C;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.main-btn button:hover {
+    background: #FFC000;
+}
+
+.main-btn button:focus {
+    outline: none;
+}
+
+section h1 {
+    color: #292929;
+    font-weight: bold;
+    font-size: 50px;
+    display: block;
+}
+
+section h1 span {
+    position: relative;
+}
+
+.content-about {
+    padding-top: 150px;
+    margin: 0 auto;
+}
+
+.content-about strong {
+    font-size: 22px;
+}
+.content-about a{
+    text-decoration: none;
+    color: #292929;
+}
+.content-about a:hover{
+    text-decoration: none;
+    color: #413a3a;
+}
+
+.content-line-about {
+    width: 62px;
+    height: 10px;
+    background: #FFCB45;
+    display: inline-block;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.content-line-traffics {
+    width: 62px;
+    height: 10px;
+    background: #FFCB45;
+    display: inline-block;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+}
+
+.content-about p {
+    padding-top: 70px;
+    font-size: 22px;
+    color: #484747;
+    position: relative;
+}
+
+.content-tarrifs {
+    padding-top: 150px;
+    margin: 0 auto;
+}
+
+.content-line {
+    width: 62px;
+    height: 10px;
+    background: #FFCB45;
+}
+
+.content-tarrifs p {
+    padding-top: 70px;
+    font-size: 22px;
+    color: #484747;
+}
+
+.col-4 {
+    padding: 0;
+}
+
+#cards {
+    border: 0;
+    padding-top: 120px;
+    text-align: center;
+}
+
+#cards img {
+    padding: 40px 0 0 20px;
+    width: 250px;
+}
+
+.text-card {
+    font-weight: 600;
+    font-size: 24px;
+    color: #707070;
+    padding-top: 35px;
+}
+
+.text-price {
+    font-weight: 600;
+    color: #FFCB45;
+    font-size: 28px;
+}
+
+#text {
+    color: #484747;
+    font-weight: 500;
+    padding-top: 40px;
+}
+
+#text a {
+    color: #FFC000;
+}
+
+footer {
+    padding-top: 171px;
+}
+
+.footer-text {
+    background: #FFE49F;
+    padding: 89px 0 89px 0;
+    color: #959595;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container {
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+@media (max-width : 1024px) {
+    .menu {
+        display: none;
+    }
+
+    .main-overlay {
+        max-height: 100vh;
+    }
+
+    .main-content {
+        padding-top: 35%;
+    }
+}
+
+@media (max-width : 500px) {
+    .header-container {
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .main-text p {
+        font-size: 24px;
+    }
+
+    .main-content {
+        padding-top: 35%;
+    }
+
+    .main-text h1 {
+        font-size: 44px;
+    }
+
+    .logo,
+    .call-number {
+        padding: 25px 20%;
+    }
+
+    .content-about p,
+    .content-tarrifs p {
+        font-size: 16px;
+    }
+
+    .content-about h1,
+    .content-tarrifs h1 {
+        font-size: 36px;
+    }
+}
