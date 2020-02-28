@@ -15,7 +15,8 @@ h2 {
 }
 
 .main-bg {
-    background: url(../img/main-bg.png) center center no-repeat/cover;
+    background: url(../img/main-bg.png) center center no-repeat;
+    background-size : cover;
     width: 100%;
     color: #fff;
 }
